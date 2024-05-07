@@ -8,3 +8,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <App />
   </React.StrictMode>
 );
+
+//  we are following this template
+// https://bootstrapmade.com/demo/Arsha/
