@@ -1,5 +1,12 @@
+import Header from "./components/layout/Header";
+
 function App() {
-  return <>Arsha react</>;
+  return (
+    <>
+      <Header />
+      Arsha react
+    </>
+  );
 }
 
 export default App;
