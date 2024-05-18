@@ -1,6 +1,6 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import NavItem from "./NavItem";
-import { AppContext, useAppState } from "../../context";
+import { useAppState } from "../../context";
 
 /**
  * 1. window.location.hash
