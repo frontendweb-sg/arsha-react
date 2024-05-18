@@ -1,15 +1,17 @@
-import { ReactNode } from "react";
+import { MouseEventHandler, ReactNode } from "react";
 
 interface NavItemProps {
   href: string;
   className?: string;
   children: ReactNode;
+  onClick: MouseEventHandler<HTMLAnchorElement>;
 }
 
-function NavItem({ children, href, className }: NavItemProps) {
+function NavItem({ children, href, className, onClick }: NavItemProps) {
+  href = href ?? "/";
   return (
     <li>
-      <a href={href} className={className}>
+      <a onClick={onClick} href={href} className={className}>
         {children}
       </a>
     </li>

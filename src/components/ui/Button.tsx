@@ -21,10 +21,15 @@ export default function Button({
   children,
   size = "md",
   color = "primary",
+  ...rest
 }: ButtonProps) {
   const classes = classNames("btn", {
     ["btn-" + color]: color,
     ["btn-" + size]: size,
   });
-  return <button className={classes}>{children}</button>;
+  return (
+    <button className={classes} {...rest}>
+      {children}
+    </button>
+  );
 }
